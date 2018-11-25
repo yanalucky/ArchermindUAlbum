@@ -1,0 +1,22 @@
+//
+//  UA_Default_UI.h
+//  Archermind_HW_UAlbum
+//
+//  Created by Yana on 2018/11/25.
+//  Copyright © 2018年 Archermind. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface UA_Default_UI : UIControl
+
+@property (nonatomic,copy)void(^reloadBlock)(void);//点击重新加载的control
+@property (nonatomic,copy) NSString *titleString,*imageString;
+
+- (instancetype)initWithFrame:(CGRect)frame;
+
+@end
+
+NS_ASSUME_NONNULL_END
